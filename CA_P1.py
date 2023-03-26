@@ -18,4 +18,4 @@ def cdp(price, a):
         b_f_d=0.08*price
         f_p= price-b_f_d
         return f_p
-print("Your final price after calculating all discounts is Rs",cdp(price,a))
+print("Your final price after calculating all discounts is Rs.",cdp(price,a))

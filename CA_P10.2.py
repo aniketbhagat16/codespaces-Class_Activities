@@ -10,17 +10,17 @@ be perfect design control structure for this problem statement
 #        print(Div) # Suit1
 #Div=Div+1  # Suit 2
 """
-Nint= 28
+Nint= int(input())
 Div=1
-
+s=0
 while Div<Nint:
     if Nint% Div==0:
-        print(Div)
+        s+=Div
     Div= Div+1
 
-if Div>Nint:
+if s>Nint:
     print("The number", Nint, "is abundant")
-elif Div<Nint:
+elif s<Nint:
     print("The number", Nint, "is deficient")
 else:
     print("The number", Nint, "is perfect")

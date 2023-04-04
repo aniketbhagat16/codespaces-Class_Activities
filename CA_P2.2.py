@@ -1,9 +1,12 @@
-"""
-Chit Chat Application - Function:
-How one can check if the restriction is on a number of words rather than letters?
-Write a function that allows a message with only 30 words. """
+"""Conversion: Input some numbers, do some simple arithmetic to do silly conversions(Python3)"""
 
-a=input()
-word_list=a.split()[:30]
-output=" ".join(word_list)
-print(output)
+a=float(input("Enter distance in Kilometers: "))
+b=a/1.069
+print(b,"miles")
+c=a*1000
+print(c,"meters")
+d=float(input("Enter the weight of oil in Kilograms: "))
+e=d*1000
+print(e,"grams")
+f=d*1.1364
+print(f,"litres")

@@ -1,17 +1,21 @@
-"""Chit Chat Application - Function:
+"""Arithmetic: Input some numbers, do some simple arithmetic, output results (Python3)"""
 
-(a) In few chit-chat programs, there is a limitation on the number of letters that you can send to your family and friends.
-
-Write a function that takes as input the,
-
-message and checks whether the number of letters is less than 200 or above. If the length of the information is less than 200, the chat should be returned.
-
-If the length of the chat is greater than 200, data consisting of only the first 200 characters should be returned."""
-a=input()
-def chat(a):
-    if len(a)<=200:
-        return a
-    else:
-        b=a[:200]
-        return b
-print(chat(a))
+c=input("Which Arithetic operation you want to get? ")
+a=int(input("Enter no. 1 "))
+b=int(input("Enter no. 2 "))
+if c=="add" or c=="Add" or c=="ADD" or c=="plus" or c=="Plus" :
+    print(a+b)
+elif c=="subtract" or c=="Subtract" or c=="SUBTRACT" or c=="minus" or c=="Minus":
+    print(a-b)   
+elif c=="multiply" or c=="Multiply" or c=="MULTIPLY" or c=="Multiplication" or c=="multiplication":
+    print(a*b)
+elif c=="divide" or c=="Divide" or c=="DIVIDE" or c=="Division" or c=="division":
+    print(a/b)
+elif c=="power" or c=="Power" or c=="POWER":
+    print(a**b)
+elif c=="floor division" or c=="Floor Division" or c=="Floor division" or c=="FLOOR DIVISION":
+    print(a//b)
+elif c=="remainder" or c=="Remainder" or c=="REMAINDER":
+    print(a%b)
+else:
+    print("Invalid Arithmetic Operation")

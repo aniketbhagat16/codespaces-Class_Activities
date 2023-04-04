@@ -1,20 +1,21 @@
 """Earthquake Impact: Input some numbers, do some simple arithmetic, output results. (Python3)"""
 
-mgn = float(input("Enter magnitude of Earthquake: "))
-
-if mgn<2:
-    print("Micro Earthquake")
-elif 2<=mgn<3:
-    print("Very Minor Earthquake")
-elif 3<=mgn<4:
-    print("Minor Earthquake")
-elif 4<=mgn<5:
-    print("Light Earthquake")
-elif 5<=mgn<6:
-    print("Moderate Earthquake")
-elif 6<=mgn<7:
-    print("Strong Earthquake")
-elif 7<=mgn<8:
-    print("Major Earthquake")
-else:
-    print("Great Earthquake")
+magnitude = float(input("Enter magnitude of Earthquake: "))
+def Earthquake_Impact(magnitude):
+    if magnitude<2:
+        return "Micro Earthquake"
+    elif 2<=magnitude<3:
+        return "Very Minor Earthquake"
+    elif 3<=magnitude<4:
+        return "Minor Earthquake"
+    elif 4<=magnitude<5:
+        return "Light Earthquake"
+    elif 5<=magnitude<6:
+        return "Moderate Earthquake"
+    elif 6<=magnitude<7:
+        return "Strong Earthquake"
+    elif 7<=magnitude<8:
+        return "Major Earthquake"
+    else:
+        return "Great Earthquake"
+print(Earthquake_Impact(magnitude))

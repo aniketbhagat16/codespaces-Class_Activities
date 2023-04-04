@@ -1,30 +1,26 @@
 """
-Electromagnetic radiation can be classified into one of 7 categories according to its
-frequency, as shown in the table below:
+We have three categories to check. If the sum of divisors is greater than a number, the number is
+abundant. If the sum of divisors is less than a number, the number is deficient. Otherwise, it must
+be perfect design control structure for this problem statement
 
-Radio Waves Less than 3 × 10^9
-Microwaves 3 × 10^9 to less than 3 × 10^12
-Infrared Light 3 × 10^12 to less than 4.3 × 10^14
-Visible Light 4.3 × 10^14 to less than 7.5 × 10^14
-Ultraviolet Light 7.5 × 10^14 to less than 3 × 10^17
-X-Rays 3 × 10^17 to less than 3 × 10^19
-Gamma Rays 3 × 10^19 or more
+#Nint=28 # Number to be validated 
+#Div=1    #Divisor
+#while Div<Nint:
+#   if Nint % Div==0:
+#        print(Div) # Suit1
+#Div=Div+1  # Suit 2
+"""
+Nint= int(input())
+Div=1
+s=0
+while Div<Nint:
+    if Nint% Div==0:
+        s+=Div
+    Div= Div+1
 
-Write a program that reads the frequency of some radiation from the user and
-displays name of the radiation as part of an appropriate message."""
-
-a=int(input("Enter Frequency "))
-if a<3*(10**9):
-    print("Radio Waves")
-elif 3*10**9<=a<3*10**12:
-    print("Microwaves")
-elif 3*10**12<=a<4.3*10**14:
-    print("Infrared Light")
-elif 4.3*10**9<=a<7.5*10**14:
-    print("Visible Light")
-elif 7.5*10**14<=a<3*10**17:
-    print("Ultravoilet Light")
-elif 3*10**19<=a<3*10**19:
-    print("X-rays")
+if s>Nint:
+    print("The number", Nint, "is abundant")
+elif s<Nint:
+    print("The number", Nint, "is deficient")
 else:
-    print("Gamma rays")
+    print("The number", Nint, "is perfect")

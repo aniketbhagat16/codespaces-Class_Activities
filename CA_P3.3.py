@@ -2,7 +2,10 @@
 
 magnitude = float(input("Enter magnitude of Earthquake: "))
 def Earthquake_Impact(magnitude):
-    if magnitude<2:
+    
+    if magnitude<=0:
+        return "No Earthquake"
+    elif 0<magnitude<2:
         return "Micro Earthquake"
     elif 2<=magnitude<3:
         return "Very Minor Earthquake"

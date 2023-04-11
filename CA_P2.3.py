@@ -2,7 +2,9 @@
 
 mgn = float(input("Enter magnitude of Earthquake: "))
 
-if mgn<2:
+if mgn<=0:
+    print("No Earthquake")
+elif 0<mgn<2:
     print("Micro Earthquake")
 elif 2<=mgn<3:
     print("Very Minor Earthquake")
